@@ -46,7 +46,7 @@ blockquote p {
 h2 {
     color: var(--h2-color);
     font-size: var(--h2-size);
-    border-bottom: 1px solid color-mix(in srgb, var(--color-accent), rgb(0 0 0 / 0) 60%);
+    border-bottom: 1.2px solid color-mix(in srgb, var(--color-accent), rgb(0 0 0 / 0) 60%);
     margin-top: 2.4mm !important;
     margin-bottom: 1.9mm !important;
     line-height: 1;
@@ -98,6 +98,12 @@ li p {
 
 strong {
     color: var(--text-strong);
+}
+
+/* 文字半加粗  <span class="semi-bold"> */
+.semi-bold {
+    font-weight: 500;
+    -webkit-text-stroke: 0.4px currentColor;
 }
 
 /* List */
@@ -203,6 +209,37 @@ div[alt="entry-title"] {
     justify-content: space-between;
     align-items: center;
 }
+
+/* 项目title，增加下划线 */
+.entry-title-project,
+div[alt="entry-title-project"] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 4px;
+}
+
+/* 公司标题样式，半粗字体 */
+.entry-title-company,
+div[alt="entry-title-company"] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.entry-title-company span:first-child,  /* 前面的公司名称，半粗字体 */
+div[alt="entry-title-company"] span:first-child {
+    font-weight: 500;
+    font-size: 11pt;
+    /* -webkit-text-stroke: 0.3px currentColor; 这里精细调节粗细 */ 
+}
+.entry-title-company span:last-child,  /* 后边的时间正常字体 */
+div[alt="entry-title-company"] span:last-child {
+    font-weight: normal;
+    font-size: 9.5pt;
+}
+
 
 .icon,
 span[alt="icon"] {

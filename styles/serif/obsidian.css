@@ -13,9 +13,10 @@ body {
     --line-height: 1.8;
     --avatar-width: 24mm;
 
-    --h1-size: 25pt;
+    --h1-size: 15pt;
     --h2-size: 13pt;
     --h3-size: 11pt;
+    --h4-size: 9.5pt;
     --blockquote-size: 9.3pt;
 
     --text-font: "LapisCV Icon", 'SourceHanSansCN';
@@ -30,6 +31,7 @@ body {
     --h1-color: var(--text-normal);
     --h2-color: var(--color-accent);
     --h3-color: var(--text-normal);
+    --h4-color: var(--text-normal);
     --border-color: #dae3ea;
     --shadow-color: #a7bbc969;
     --code-background: var(--background-primary);
@@ -50,6 +52,7 @@ body {
     --h3-weight: bold;
     --h3-line-height: 1.8;
     --h3-font: var(--title-font);
+    --h4-font: var(--title-font);
 
     --font-monospace: var(--code-font);
     --link-external-color: var(--text-accent-hover);
