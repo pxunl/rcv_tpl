@@ -46,7 +46,7 @@ blockquote p {
 h2 {
     color: var(--h2-color);
     font-size: var(--h2-size);
-    border-bottom: 1.2px solid color-mix(in srgb, var(--color-accent), rgb(0 0 0 / 0) 60%);
+    border-bottom: 1.2px solid color-mix(in srgb, var(--color-accent), rgb(0 0 0 / 0) 40%);
     margin-top: 2.4mm !important;
     margin-bottom: 1.9mm !important;
     line-height: 1;
@@ -217,7 +217,7 @@ div[alt="entry-title-project"] {
     justify-content: space-between;
     align-items: center;
     padding-top: 8px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #aaa;
     margin-bottom: 4px;
 }
 
