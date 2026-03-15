@@ -260,4 +260,18 @@ hr {
         margin: 0;
         visibility: hidden;
     }
+    
+    /* begin of 纠正导出PDF时第二层list的圆点大小、距离、水平位置不正确问题 */
+    ul ul {
+        list-style-type: '\2022' !important;  /*  !important表示强制覆盖全局样式 */
+        padding-inline-start: 2.5mm;
+    }
+    ul ul > li {
+        padding-left: 1mm;
+    }
+    ul ul > li::marker {
+        font-weight: normal;
+        font-size: 1em;   /* 调整圆点大小 */
+    }
+    /* end of 纠正导出PDF时第二层list的圆点大小、距离、水平位置不正确问题 */
 }
